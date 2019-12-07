@@ -1,9 +1,9 @@
 <h1>UToob Movies!</h1>
 <%= link_to 'Add Movie', new_movie_path %>
-<ul>
+<ul class="collection">
 	<% @movies.each do |movie| %>
-		<li>
-			<%= link_to movie.title, movie %> - <%= link_to 'Delete', movie, method: :delete %>
+		<li class="collection-item">
+			<%= link_to movie.title, movie %> - <i><%= link_to 'Delete', movie, method: :delete %></i>
 		</li>
 	<% end %>
 </ul>

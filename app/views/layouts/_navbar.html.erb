@@ -1,3 +1,6 @@
 <nav>
-	<%= button_to 'Log out', destroy_user_session_path, method: :delete %>
+<ul>
+ <li>   <%= button_to 'Edit user', edit_user_registration_path, method: :redirect %></li>
+<li> <%= button_to 'Log out', destroy_user_session_path, method: :delete %> </li>
+</ul>
 </nav>
