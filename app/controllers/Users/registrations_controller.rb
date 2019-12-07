@@ -19,11 +19,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     super
   end
 
-<<<<<<< HEAD
   PUT /resource
-=======
-  # PUT /resource
->>>>>>> 11a371245cd7af22a6b4298538bbfb8f73e925c9
   def update
     super
   end
