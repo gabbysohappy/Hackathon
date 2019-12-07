@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+s# frozen_string_literal: true
 
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
@@ -8,16 +8,11 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-<<<<<<< HEAD
-  # config.secret_key = '367a49ed2f857d846b81273eec3669efadbae3886c9f2852e62e41d15e927b81238cb8235e6ce176cc698b44e7a78d1f327b726c0c18d5de800a4a7c80ed8a91'
-=======
   # config.secret_key = 'ce2200f8a59c510df3f4899e6f0cf368d57ef10f6e63f886a91d77a71b271ffba66230913987a88c83a8fe0341a5c9bf85b8de288c9f538d11a2c9137b5bd5e9'
->>>>>>> e6ad40fd6cbc950c367dff3f6572cc5ddee2aab1
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
-
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
