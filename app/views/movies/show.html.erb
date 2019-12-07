@@ -1,2 +1,16 @@
-<h1>Movies#show</h1>
-<p>Find me in app/views/movies/show.html.erb</p>
+<h1><%= @movie.title %> Information</h1>
+<h4><%= @movie.duration %></h4>
+<h4><%= @movie.genre %></h4>
+<h4><%= @movie.description %></h4>
+<h4><%= @movie.trailer %></h4>
+<%= link_to 'Edit Movie', edit_movie_path %>
+<br />
+
+<%= link_to 'Add Comment', new_movie_comment_path(@movie) %>
+<ul>
+	<% @movie.comments.each do |com| %>
+		<li>
+			<%= com.body %> - <%= link_to 'Edit comment', edit_movie_comment_path(@movie, com) %> - <%= link_to 'Delete comment', [@movie, com], method: :delete %>
+		</li>
+	<% end %>
+</ul>

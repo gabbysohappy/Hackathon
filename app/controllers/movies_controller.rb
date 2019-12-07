@@ -10,15 +10,33 @@ class MoviesController < ApplicationController
 
   def new
   	@movie = Movie.new
+  	render partial: 'form'
   end
 
   def create
+  	@movie = Movie.new(movie_params)
+  	if @movie.save
+  		redirect_to movies_path
+  	else
+  		render partial: 'form'
+  	end
   end
 
   def edit
+  	render partial: 'form'
   end
 
   def update
+  	if @movie.update(movie_params)
+  		redirect_to @movie
+  	else
+  		redirect_to partial: 'form'
+  	end
+  end
+
+  def destroy
+  	@movie.destroy
+  	redirect_to root_path
   end
 
   private
