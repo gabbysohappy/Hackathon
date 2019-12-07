@@ -1,8 +1,10 @@
 <h1><%= @movie.title %> Information</h1>
 <h4><%= @movie.duration %></h4>
 <h4><%= @movie.genre %></h4>
-<h4><%= @movie.description %></h4>
-<h4><%= @movie.trailer %></h4>
+<h4><%= link_to @movie.description, @movie.description %></h4>
+<h4><%= @movie.get_iframe_embed_code.html_safe %></h4>
+<%= link_to 'Back to movies list', movies_path %>
+<br />
 <%= link_to 'Edit Movie', edit_movie_path %>
 <br />
 
