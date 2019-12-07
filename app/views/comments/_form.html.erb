@@ -2,5 +2,5 @@
 <%= form_for [@movie, @comment] do |c| %>
 	<%= c.label :body %>
 	<%= c.text_field :body, required: true %>
-	<%= c.submit %>
+	<%= c.submit nil, class: "ui button"%>
 <% end %>
