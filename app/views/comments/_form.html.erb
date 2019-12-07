@@ -2,5 +2,5 @@
 <%= form_for [@movie, @comment] do |c| %>
 	<%= c.label :body %>
 	<%= c.text_field :body, required: true %>
-	<%= c.submit nil, class: "waves-effect waves-light btn"%>
+	<%= c.submit :Add, class: "waves-effect waves-light btn"%>
 <% end %>
