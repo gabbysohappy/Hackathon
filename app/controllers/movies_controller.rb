@@ -22,6 +22,9 @@ class MoviesController < ApplicationController
   	end
   end
 
+  def create
+  end
+
   def edit
   	render partial: 'form'
   end

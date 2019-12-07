@@ -1,7 +1,6 @@
 class CommentsController < ApplicationController
   before_action :set_movie
   before_action :set_comment, only: [:edit, :update, :show, :destroy]
-  
   def index
     @comments = @movie.comments.all
   end
