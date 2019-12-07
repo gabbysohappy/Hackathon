@@ -32,7 +32,7 @@ class CommentsController < ApplicationController
     if @comment.update(comment_params)
       redirect_to movie_path(@movie)
     else
-      render :edit
+      render partial: 'form'
     end
   end
 
