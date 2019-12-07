@@ -1,4 +1,4 @@
-s# frozen_string_literal: true
+# frozen_string_literal: true
 
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
@@ -113,11 +113,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-<<<<<<< HEAD
-  # config.pepper = '2e03fa18d3db41ed97cbb32510a1f577b35f61f2fbdaa70612e8085e023f214af794c9b290d6b7ff25a6a6c207a513c9706e9226715aaa2dda5b5620058e93fe'
-=======
   # config.pepper = 'c4eeed47002b90d9e001c99dbc39f98f094f2464493f872ac4328b350509b8a7a3363cbbdcc3b922e4cdec95886ceec26e528169522e4c980ae1af5228c06dc6'
->>>>>>> e6ad40fd6cbc950c367dff3f6572cc5ddee2aab1
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
