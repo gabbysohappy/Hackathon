@@ -1,19 +1,24 @@
 <h1><%= @movie.id ? "Edit Movie" : "Add Movie" %></h1>
-<%= form_for @movie do |m| %>
+<%= form_for @movie, :html => { class: "ui form"} do |m| %>
+<div class="field">
 	<%= m.label :title %>
 	<%= m.text_field :title, required: true %>
-
+</div>
+<div class="field">
 	<%= m.label :duration %>
 	<%= m.text_field :duration, required: true %>
-
+</div>
+<div class="field">
 	<%= m.label :genre %>
 	<%= m.text_field :genre, required: true %>
-
+</div>
+<div class="field">
 	<%= m.label :description %>
 	<%= m.text_field :description, required: true %>
-
+</div>
+<div class="field">
 	<%= m.label :trailer %>
 	<%= m.text_field :trailer, required: true %>
-
-	<%= m.submit %>
+</div>
+	<%= m.button :Submit, type: :submit, class: "ui primary button" %>
 <% end %>
