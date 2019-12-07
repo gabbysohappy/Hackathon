@@ -1,0 +1,7 @@
+<h1><%= @comment.id ? "Edit Comment" : "Add Comment" %></h1>
+<%= form_for [@movie, @comment] do |c| %>
+	<%= c.label :body %>
+	<%= c.text_field :body, required: true %>
+
+	<%= c.submit %>
+<% end %>
