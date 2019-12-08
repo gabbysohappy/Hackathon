@@ -1,6 +1,6 @@
 <nav>
 	<ul>
-		<li>   <%= button_to 'Edit user', edit_user_registration_path, method: :redirect, class:'btn waves-effect waves-light' %></li>
+		<li>   <%= button_to 'Edit user', edit_user_registration_path, method: :get, class:'btn waves-effect waves-light' %></li>
 		<li> <%= button_to 'Log out', destroy_user_session_path, method: :delete, class:'btn waves-effect waves-light' %> </li>
 	</ul>
 </nav>
